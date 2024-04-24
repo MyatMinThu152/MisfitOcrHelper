@@ -6,34 +6,35 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
+import com.misfit.orchelper.delegates.AuthenticationCallbackDelegates
 
 
 open class MisfitBiometricActivity : AppCompatActivity() {
     private lateinit var biometricPrompt: BiometricPrompt
-
+    private var mDelegates: AuthenticationCallbackDelegates? = null
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         initLayout()
     }
 
-
     private fun initLayout() {
         val executor = ContextCompat.getMainExecutor(this)
         val callback = object : BiometricPrompt.AuthenticationCallback() {
             override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {
                 super.onAuthenticationError(errorCode, errString)
-                showToast("Authentication : $errString")
+                mDelegates?.onAuthenticationFailure("Authentication error: $errString")
             }
 
             override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
                 super.onAuthenticationSucceeded(result)
-                showToast("Authentication succeeded!")
+                mDelegates?.onAuthenticationSuccess("Authentication succeeded!")
             }
 
             override fun onAuthenticationFailed() {
                 super.onAuthenticationFailed()
-                showToast("Authentication failed")
+                mDelegates?.onAuthenticationFailure("Authentication fail!")
             }
         }
 
@@ -61,7 +62,8 @@ open class MisfitBiometricActivity : AppCompatActivity() {
 
     }
 
-    fun biometricPrompt(){
+    fun biometricPrompt(delegate: AuthenticationCallbackDelegates) {
+        mDelegates = delegate
         val promptInfo = BiometricPrompt.PromptInfo.Builder()
             .setTitle("Biometric Authentication")
             .setSubtitle("Choose a biometric method")
@@ -71,11 +73,9 @@ open class MisfitBiometricActivity : AppCompatActivity() {
         biometricPrompt.authenticate(promptInfo)
     }
 
-    fun showToast(message : String){
-        Toast.makeText(this,message, Toast.LENGTH_SHORT).show()
+    fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
-
-
 
 
 }
