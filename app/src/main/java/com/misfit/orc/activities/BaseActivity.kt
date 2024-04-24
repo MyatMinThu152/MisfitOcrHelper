@@ -18,8 +18,4 @@ open class BaseActivity : AppCompatActivity() {
 
 
 
-
-
-
-
 }

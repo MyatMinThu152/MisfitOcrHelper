@@ -10,15 +10,16 @@ import com.misfit.orc.adapter.HomeItemAdapter
 import com.misfit.orc.databinding.ActivityMainV2Binding
 import com.misfit.orc.delegates.HomeItemDelegates
 import com.misfit.orc.dialogs.MainItemVO
-import com.misfit.orchelper.ToastUtils
+import com.misfit.orchelper.MisfitBiometricActivity
 
-class MainActivity : BaseActivity(), HomeItemDelegates {
+
+class MainActivity : MisfitBiometricActivity(), HomeItemDelegates {
 
     private lateinit var binding: ActivityMainV2Binding
 
     private val itemList = mutableListOf<MainItemVO>()
     private val mainItemAdapter by lazy { HomeItemAdapter(this) }
-    private lateinit var biometricPrompt: BiometricPrompt
+   // private lateinit var biometricPrompt: BiometricPrompt
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,12 +29,11 @@ class MainActivity : BaseActivity(), HomeItemDelegates {
 
         binding.rvMain.adapter = mainItemAdapter
         initData()
-        initLayout()
+       // initLayout()
 
-        ToastUtils().showToast(this,"hello mmt")
     }
 
-    private fun initLayout() {
+/*    private fun initLayout() {
         val executor = ContextCompat.getMainExecutor(this)
         val callback = object : BiometricPrompt.AuthenticationCallback() {
             override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {
@@ -74,12 +74,12 @@ class MainActivity : BaseActivity(), HomeItemDelegates {
             }
         }
 
-    }
+    }*/
 
     override fun onTapItem(data: MainItemVO) {
         when (data.id) {
             1 -> {
-                checkBiometricPrompt()
+                biometricPrompt()
             }
 
             else -> {
@@ -87,15 +87,15 @@ class MainActivity : BaseActivity(), HomeItemDelegates {
         }
     }
 
-    private fun checkBiometricPrompt(){
-        val promptInfo = BiometricPrompt.PromptInfo.Builder()
-            .setTitle("Biometric Authentication")
-            .setSubtitle("Choose a biometric method")
-            .setNegativeButtonText("Cancel")
-            .build()
-
-        biometricPrompt.authenticate(promptInfo)
-    }
+//    private fun checkBiometricPrompt(){
+//        val promptInfo = BiometricPrompt.PromptInfo.Builder()
+//            .setTitle("Biometric Authentication")
+//            .setSubtitle("Choose a biometric method")
+//            .setNegativeButtonText("Cancel")
+//            .build()
+//
+//        biometricPrompt.authenticate(promptInfo)
+//    }
 
     private fun initData() {
         itemList.clear()
