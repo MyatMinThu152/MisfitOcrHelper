@@ -1,0 +1,86 @@
+<resources>
+
+    <string name="title_ocr">OCR</string>
+    <string name="title_recognition">Recognition</string>
+    <string name="title_face_recognition">Face Recognition</string>
+    <string name="title_appointment">Appointment</string>
+    <string name="title_me">Me</string>
+    <string name="title_account">Account</string>
+
+    <string name="lbl_photo_gallery">Photo Gallery </string>
+    <string name="lbl_camera"> Camera </string>
+    <string name="lbl_gallery"> Gallery </string>
+
+    <string name="lbl_photo_camera">Camera Take Photo  </string>
+    <string name="lbl_video_camera">Camera Take Video  </string>
+
+    <string name="lbl_cancel">Cancel</string>
+    <string name="lbl_logout">Log Out</string>
+    <string name="errorTitle" translatable="false">Oops!</string>
+    <string name="invalid_session">Invalid Session</string>
+    <string name="lbl_ok">Ok</string>
+
+    <string name="lbl_passport">Passport</string>
+    <string name="lbl_nrc">NRC</string>
+    <string name="lbl_driving_license">Driving License</string>
+    <string name="lbl_upload_photo_here">Upload Photo Here</string>
+    <string name="lbl_submit">Submit</string>
+    <string name="lbl_filter">Filter</string>
+
+    <string name="lbl_nrc_front">NRC Front</string>
+    <string name="lbl_nrc_back">NRC Back</string>
+
+    <string name="lbl_name">Name </string>
+    <string name="lbl_license_no">License No</string>
+    <string name="lbl_nrc_no">Nrc Number </string>
+
+    <string name="lbl_date_of_birth">Date of Birth </string>
+    <string name="lbl_semi_colon">:</string>
+    <string name="lbl_blood_type">Blood Type</string>
+    <string name="lbl_expire_date">Expired Date</string>
+    <string name="lbl_address">Address</string>
+    <string name="lbl_detail">Detail</string>
+    <string name="lbl_success">Successfully</string>
+    <string name="lbl_detail_information">Driving License Information</string>
+
+    <string name="lbl_passport_detail_information">Passport Information</string>
+
+    <string name="lbl_country_code">Country Code</string>
+    <string name="lbl_passport_number">Passport No</string>
+    <string name="lbl_sex">Sex</string>
+    <string name="lbl_date_of_expired">Date of Expired </string>
+    <string name="lbl_check_expired">Check Expiry</string>
+    <string name="lbl_check_age">Check Age</string>
+    <string name="lbl_cbm">Cbm</string>
+    <string name="lbl_see_info">See Information</string>
+    <string name="lbl_nrc_number">NRC No</string>
+    <string name="lbl_nrc_info">NRC Information</string>
+    <string name="lbl_date">Date</string>
+    <string name="lbl_father_name">Father Name</string>
+    <string name="lbl_nrc_sample_no">10/MaDaNa(N)210189</string>
+    <string name="lbl_religion">Religion</string>
+    <string name="lbl_height">Height</string>
+    <string name="lbl_gender">Gender</string>
+
+    <string name="lbl_nrc_number_mm">အမှတ်</string>
+    <string name="lbl_date_mm">ရက်စွဲ</string>
+    <string name="lbl_father_name_mm">ဖခင်အမည်</string>
+    <string name="lbl_date_of_birth_mm">မွေးသက္ကရာဇ်</string>
+    <string name="lbl_religion_mm">လူမျိုး/ဘာသာ</string>
+    <string name="lbl_height_mm">အရပ်</string>
+    <string name="lbl_blood_type_mm">သွေးအုပ်စု</string>
+    <string name="lbl_gender_mm">ကျား/မ</string>
+    <string name="lbl_name_mm">အမည်</string>
+
+    <string name="lbl_image_one">Video Or Image </string>
+    <string name="lbl_image_two">Video Or Image </string>
+    <string name="lbl_next">Next</string>
+    <string name="lbl_both_face_recognition">Face Recognition Video</string>
+    <string name="lbl_result_info">Result Information</string>
+    <string name="lbl_status">Status</string>
+    <string name="lbl_percent">Confidence Percent</string>
+
+    <string name="title_fingerprint">Fingerprint Or Face ID</string>
+    <string name="title_face_id">Face ID</string>
+
+</resources>

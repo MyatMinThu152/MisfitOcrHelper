@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2f0d30</color>
+    <color name="colorPrimaryDark">#830299</color>
+    <color name="colorAccent">#0072b3</color>
+    <color name="colorPrimaryLight">#C744DD</color>
+
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorGray">#2E3438</color>
+    <color name="colorHint">#878888</color>
+    <color name="colorQuoteText">#818181</color>
+    <color name="colorText">#5c6870</color>
+    <color name="colorTextPrimary">#47244C</color>
+    <color name="colorBorder">#74818c</color>
+    <color name="colorAppointment">#e6f6ff</color>
+    <color name="colorNavigationText">#5c6870</color>
+    <color name="colorNavigationIcon">#2284bd</color>
+    <color name="colorJobText">#3f6479</color>
+    <color name="colorEmotionText">#929292</color>
+    <color name="colorAboutText">#00314C</color>
+    <color name="colorChipBackground">#b3e3ff</color>
+    <color name="colorApply">#c7cdd1</color>
+    <color name="colorApplyText">#8f9ba3</color>
+    <color name="colorJoy">#60BE25</color>
+    <color name="colorSurprised">#ef5da7</color>
+    <color name="colorSadness">#81d1fe</color>
+    <color name="colorAngry">#ed3030</color>
+    <color name="colorDisgust">#9cce51</color>
+    <color name="colorFear">#b5d5e8</color>
+    <color name="colorNonActive">#d9d9d9</color>
+    <color name="colorSpinnerText">#001019</color>
+    <color name="colorAboutCard">#4cbfff</color>
+    <color name="colorSpinnerGb">#B3E3FF</color>
+    <color name="colorTab">#1d1d1d</color>
+    <color name="colorBrief">#acbcc5</color>
+    <color name="colorButtonCancel">#d14745</color>
+
+    <color name="colorMapBorder">#bfe8fe</color>
+
+    <color name="colorRed">#FF0000</color>
+    <color name="colorLine">#99a2a8</color>
+    <color name="colorBlue">#007aff</color>
+    <color name="colorUploadFile">#81d1fe</color>
+    <color name="transparent">#00000000</color>
+    <color name="appBarBgColor">#F2F2F7</color>
+    <color name="colorDisableTime">#C7CDD1</color>
+    <color name="colorCardBorder">#DA9AE4</color>
+
+
+</resources>

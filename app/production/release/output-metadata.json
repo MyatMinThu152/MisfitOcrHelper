@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.peakfinity.honesthour",
+  "variantName": "productionRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 5,
+      "versionName": "1.4",
+      "outputFile": "Honest Hour_171123_1020_production_release_1.4.apk"
+    }
+  ],
+  "elementType": "File"
+}

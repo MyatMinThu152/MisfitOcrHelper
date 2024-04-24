@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.misfit.orc.fragments.OcrFragment"
+        android:label="@string/title_ocr"
+        tools:layout="@layout/fragment_ocr"/>
+
+
+    <fragment
+        android:id="@+id/navigation_face_recognition"
+        android:name="com.misfit.orc.fragments.FaceRecognitionFragment"
+        android:label="@string/title_face_recognition"
+        tools:layout="@layout/fragment_face_recognition"/>
+
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.misfit.orc.fragments.TwoFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_home"/>
+
+
+</navigation>

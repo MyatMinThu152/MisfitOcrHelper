@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.peakfinity.honesthour",
+  "variantName": "uatDebugMinified",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 1,
+      "versionName": "1.0",
+      "outputFile": "Honest Hour_070823_1803_uat_debugMinified_1.0.apk"
+    }
+  ],
+  "elementType": "File"
+}
