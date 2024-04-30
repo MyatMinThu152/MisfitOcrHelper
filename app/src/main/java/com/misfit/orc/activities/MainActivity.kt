@@ -54,6 +54,14 @@ class MainActivity : MisfitBiometricActivity(), HomeItemDelegates ,
                 R.color.colorAboutText
             )
         )
+        itemList.add(
+            MainItemVO(
+                2,
+                R.drawable.ic_logo,
+                getString(R.string.title_fingerprint),
+                R.color.colorAboutText
+            )
+        )
         mainItemAdapter.setNewData(itemList)
 
     }
