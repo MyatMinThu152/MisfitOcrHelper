@@ -10,9 +10,6 @@ class ToastUtils {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
     }
 
-    fun showToastLong(context: Context, message: String) {
-        Toast.makeText(context, message, Toast.LENGTH_LONG).show()
-    }
-
+ 
 
 }
